@@ -3,6 +3,9 @@ import { ReactiveVar } from 'meteor/reactive-var';
 
 import './main.html';
 
+/*new Mongo.Collection('items');*/
+ItemList = new Mongo.Collection('items');
+ItemList.insert({name: Critter Champs Chair, mesos: 1000000});
 /*Template.hello.onCreated(function helloOnCreated() {
   // counter starts at 0
   this.counter = new ReactiveVar(0);
