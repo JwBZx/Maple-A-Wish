@@ -1,24 +1,18 @@
-import { Template } from 'meteor/templating';
+
+/*import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
-
 import './main.html';
-
-/*new Mongo.Collection('items');*/
-ItemList = new Mongo.Collection('items');
-ItemList.insert({name: Critter Champs Chair, mesos: 1000000});
-ItemList.insert({name: Spell Traces, mesos: 100});
-/*Template.hello.onCreated(function helloOnCreated() {
+new Mongo.Collection('items');
+Template.hello.onCreated(function helloOnCreated() {
   // counter starts at 0
   this.counter = new ReactiveVar(0);
-});*/
-
-/*Template.hello.helpers({
+});
+Template.hello.helpers({
   counter() {
     return Template.instance().counter.get();
   },
-});*/
-
-/*Template.hello.events({
+});
+Template.hello.events({
   'click button'(event, instance) {
     // increment the counter when button is clicked
     instance.counter.set(instance.counter.get() + 1);
