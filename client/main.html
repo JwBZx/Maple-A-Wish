@@ -7,5 +7,9 @@
 </body>
 
 <template name ="wishlist">
-  Hello!
+  <ul>
+    {{#each wishlist}}
+      <li>{{name}}: {{score}}</li>
+    {{/each}}
+  </ul>
 </template>
