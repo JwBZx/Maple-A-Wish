@@ -9,7 +9,7 @@
 <template name ="wishlist">
   <ul>
     {{#each wishlist}}
-      <li class = "player">{{name}}: {{score}}</li>
+      <li class = "player {{selectedWish}}">{{name}}: {{score}}</li>
     {{/each}}
   </ul>
 </template>

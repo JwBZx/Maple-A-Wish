@@ -6,7 +6,11 @@ if(Meteor.isClient){
       return wishlist.find()
     },
     'selectedWish': function(){
-      // code goes here
+      var playerId = this._id;
+      var selectedWish = Session.get('selectedWish');
+      if(playerId === selectedWish){
+        return "selected"
+      }
     }
   });
   Template.wishlist.events({
